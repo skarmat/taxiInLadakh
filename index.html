@@ -70,22 +70,22 @@
     </section>
 
     <section id="destinations" class="destinations">
-      <h2>Popular Destinations</h2>
+      <h2>Our Fleet</h2>
       <div class="destinations-grid">
         <div class="destination-card">
-          <img src="images/pangong.jpg" alt="Pangong Lake" />
-          <h3>Pangong Lake</h3>
-          <p>Experience the stunning blue waters at 14,270 ft</p>
+          <img src="images/taxi11.jpg" alt="Luxury Taxi Service" />
+          <h3>Luxury Taxi Service</h3>
+          <p>Comfortable and spacious vehicles for your journey</p>
         </div>
         <div class="destination-card">
-          <img src="images/nubra.jpg" alt="Nubra Valley" />
-          <h3>Nubra Valley</h3>
-          <p>Explore the desert mountains and double-humped camels</p>
+          <img src="images/taxi8.jpg" alt="Professional Drivers" />
+          <h3>Professional Drivers</h3>
+          <p>Experienced drivers who know Ladakh's terrain well</p>
         </div>
         <div class="destination-card">
-          <img src="images/tsomoriri.jpg" alt="Tso Moriri" />
-          <h3>Tso Moriri</h3>
-          <p>Visit the high-altitude lake in Changthang region</p>
+          <img src="images/taxi5.jpg" alt="Scenic Tours" />
+          <h3>Scenic Tours</h3>
+          <p>Explore Ladakh's most beautiful destinations</p>
         </div>
       </div>
     </section>
@@ -116,22 +116,38 @@
         <div class="contact-info">
           <div class="info-item">
             <i class="fas fa-phone"></i>
-            <p>+91 1234567890</p>
+            <p>+91 80823 40177</p>
           </div>
           <div class="info-item">
             <i class="fas fa-envelope"></i>
-            <p>info@ladakhtaxi.com</p>
+            <p>taxiinleh@gmail.com</p>
           </div>
           <div class="info-item">
             <i class="fas fa-map-marker-alt"></i>
             <p>Leh, Ladakh, India</p>
           </div>
         </div>
-        <form class="contact-form">
-          <input type="text" placeholder="Your Name" required />
-          <input type="email" placeholder="Your Email" required />
-          <input type="tel" placeholder="Your Phone" />
-          <textarea placeholder="Your Message" required></textarea>
+        <form
+          class="contact-form"
+          action="https://formsubmit.co/Jullayindia@gmail.com"
+          method="POST"
+        >
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <input type="tel" name="phone" placeholder="Your Phone" />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <input
+            type="hidden"
+            name="_subject"
+            value="New Contact Form Submission"
+          />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_next" value="thank-you.html" />
+          <input type="hidden" name="_captcha" value="false" />
           <button type="submit" class="submit-button">Send Message</button>
         </form>
       </div>
@@ -158,14 +174,32 @@
           <div class="social-links">
             <a href="#"><i class="fab fa-facebook"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://wa.me/8082340177"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2024 Ladakh Taxi. All rights reserved.</p>
+        <p>&copy; 2025 Ladakh Taxi. All rights reserved.</p>
       </div>
     </footer>
+
+    <!-- Floating Contact Icons -->
+    <div class="floating-icons">
+      <a
+        href="https://wa.me/8082340177"
+        class="float-icon whatsapp"
+        target="_blank"
+      >
+        <i class="fab fa-whatsapp"></i>
+        <span class="tooltip">Chat with us</span>
+      </a>
+      <a href="tel:+918082340177" class="float-icon call">
+        <i class="fas fa-phone"></i>
+        <span class="tooltip">Call us</span>
+      </a>
+    </div>
 
     <script src="script.js"></script>
   </body>

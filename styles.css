@@ -71,7 +71,7 @@ nav {
 .hero {
   height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("images/hero-bg.jpg") center/cover;
+    url("images/taxi3.jpg") center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -199,17 +199,22 @@ nav {
   padding: 1rem;
   background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
   color: white;
+  transition: bottom 0.3s ease;
 }
 
 .destination-card p {
   position: absolute;
-  bottom: -50px;
+  bottom: -100px;
   left: 0;
   right: 0;
   padding: 1rem;
   background: rgba(0, 0, 0, 0.8);
   color: white;
   transition: bottom 0.3s ease;
+}
+
+.destination-card:hover h3 {
+  bottom: 50px;
 }
 
 .destination-card:hover p {
@@ -582,4 +587,114 @@ footer {
 .destination-card,
 .about-content {
   animation: fadeIn 0.6s ease-out forwards;
+}
+
+/* Floating Contact Icons */
+.floating-icons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 1000;
+}
+
+.float-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.float-icon:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.float-icon.whatsapp {
+  background: #25d366;
+}
+
+.float-icon.call {
+  background: #3498db;
+}
+
+.float-icon .tooltip {
+  position: absolute;
+  right: 70px;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.float-icon:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Animation for floating icons */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.float-icon {
+  animation: float 3s ease-in-out infinite;
+}
+
+.float-icon.whatsapp {
+  animation-delay: 0.5s;
+}
+
+/* Responsive adjustments for floating icons */
+@media (max-width: 768px) {
+  .floating-icons {
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .float-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+
+  .float-icon .tooltip {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .floating-icons {
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .float-icon {
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+  }
 }
