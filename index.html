@@ -8,203 +8,808 @@
     <meta property="og:image" content="" />
     <meta property="og:url" content="" />
     <title>Ladakh Taxi Services - Custom Tours & Transportation</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="assets/css/output.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
   </head>
-  <body>
-    <header>
-      <nav>
-        <div class="logo">Ladakh Taxi</div>
-        <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#destinations">Destinations</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </nav>
-    </header>
-
-    <section id="home" class="hero">
-      <div class="hero-content">
-        <h1>Experience the Magic of Ladakh</h1>
-        <p>
-          Professional taxi services and custom tours in the Land of High Passes
-        </p>
-        <a href="#contact" class="cta-button">Book Now</a>
-      </div>
-    </section>
-
-    <section id="services" class="services">
-      <h2>Our Services</h2>
-      <div class="services-grid">
-        <div class="service-card">
-          <i class="fas fa-car"></i>
-          <h3>Airport Transfer</h3>
-          <p>Reliable pickup and drop-off services from Leh Airport</p>
-        </div>
-        <div class="service-card">
-          <i class="fas fa-mountain"></i>
-          <h3>Custom Tours</h3>
-          <p>Tailored itineraries to explore Ladakh's hidden gems</p>
-        </div>
-        <div class="service-card">
-          <i class="fas fa-hotel"></i>
-          <h3>Hotel Transfer</h3>
-          <p>Comfortable transportation to and from your accommodation</p>
-        </div>
-        <div class="service-card">
-          <i class="fas fa-camera"></i>
-          <h3>Photography Tours</h3>
-          <p>Specialized tours for capturing Ladakh's stunning landscapes</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="destinations" class="destinations">
-      <h2>Our Fleet</h2>
-      <div class="destinations-grid">
-        <div class="destination-card">
-          <img src="images/taxi11.jpg" alt="Luxury Taxi Service" />
-          <h3>Luxury Taxi Service</h3>
-          <p>Comfortable and spacious vehicles for your journey</p>
-        </div>
-        <div class="destination-card">
-          <img src="images/taxi8.jpg" alt="Professional Drivers" />
-          <h3>Professional Drivers</h3>
-          <p>Experienced drivers who know Ladakh's terrain well</p>
-        </div>
-        <div class="destination-card">
-          <img src="images/taxi5.jpg" alt="Scenic Tours" />
-          <h3>Scenic Tours</h3>
-          <p>Explore Ladakh's most beautiful destinations</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="about">
-      <h2>About Us</h2>
-      <div class="about-content">
-        <div class="about-text">
-          <p>
-            With years of experience in Ladakh's challenging terrain, we provide
-            safe, comfortable, and reliable transportation services. Our
-            experienced drivers are well-versed with local routes and ensure a
-            memorable journey through the Land of High Passes.
-          </p>
-          <ul class="features">
-            <li><i class="fas fa-check"></i> Experienced Drivers</li>
-            <li><i class="fas fa-check"></i> Well-Maintained Vehicles</li>
-            <li><i class="fas fa-check"></i> 24/7 Support</li>
-            <li><i class="fas fa-check"></i> Customizable Tours</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="contact">
-      <h2>Contact Us</h2>
-      <div class="contact-container">
-        <div class="contact-info">
-          <div class="info-item">
-            <i class="fas fa-phone"></i>
-            <p>+91 80823 40177</p>
+  <body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav
+      class="fixed top-0 w-full bg-white/95 backdrop-blur-md shadow-sm z-50 transition-all duration-300"
+      id="navbar"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16 md:h-20">
+          <div class="flex items-center space-x-2">
+            <div
+              class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center"
+            >
+              <i class="fas fa-car text-white text-xl"></i>
+            </div>
+            <span
+              class="text-xl md:text-2xl font-bold text-gray-900"
+              style="font-family: 'Poppins', sans-serif"
+              >Ladakh Taxi</span
+            >
           </div>
-          <div class="info-item">
-            <i class="fas fa-envelope"></i>
-            <p>taxiinleh@gmail.com</p>
+
+          <!-- Desktop Navigation -->
+          <div class="hidden md:flex items-center space-x-8">
+            <a
+              href="#home"
+              class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200"
+              >Home</a
+            >
+            <a
+              href="#services"
+              class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200"
+              >Services</a
+            >
+            <a
+              href="#fleet"
+              class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200"
+              >Fleet</a
+            >
+            <a
+              href="#about"
+              class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200"
+              >About</a
+            >
+            <a
+              href="#contact"
+              class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200"
+              >Contact</a
+            >
+            <a
+              href="#contact"
+              class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+              >Book Now</a
+            >
           </div>
-          <div class="info-item">
-            <i class="fas fa-map-marker-alt"></i>
-            <p>Leh, Ladakh, India</p>
-          </div>
+
+          <!-- Mobile menu button -->
+          <button
+            class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors duration-200"
+            id="mobile-menu-btn"
+          >
+            <i class="fas fa-bars text-gray-700 text-xl"></i>
+          </button>
         </div>
-        <form
-          class="contact-form"
-          action="https://formsubmit.co/Jullayindia@gmail.com"
-          method="POST"
+
+        <!-- Mobile Navigation -->
+        <div
+          class="md:hidden hidden bg-white border-t border-gray-200"
+          id="mobile-menu"
         >
-          <input type="text" name="name" placeholder="Your Name" required />
-          <input type="email" name="email" placeholder="Your Email" required />
-          <input type="tel" name="phone" placeholder="Your Phone" />
-          <textarea
-            name="message"
-            placeholder="Your Message"
-            required
-          ></textarea>
-          <input
-            type="hidden"
-            name="_subject"
-            value="New Contact Form Submission"
-          />
-          <input type="hidden" name="_template" value="table" />
-          <input type="hidden" name="_next" value="thank-you.html" />
-          <input type="hidden" name="_captcha" value="false" />
-          <button type="submit" class="submit-button">Send Message</button>
-        </form>
-      </div>
-    </section>
-
-    <footer>
-      <div class="footer-content">
-        <div class="footer-section">
-          <h3>Ladakh Taxi</h3>
-          <p>Your trusted partner for exploring Ladakh</p>
-        </div>
-        <div class="footer-section">
-          <h3>Quick Links</h3>
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#destinations">Destinations</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-        <div class="footer-section">
-          <h3>Follow Us</h3>
-          <div class="social-links">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="https://wa.me/8082340177"
-              ><i class="fab fa-whatsapp"></i
-            ></a>
+          <div class="py-4 space-y-4">
+            <a
+              href="#home"
+              class="block px-4 py-2 text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-lg transition-colors duration-200"
+              >Home</a
+            >
+            <a
+              href="#services"
+              class="block px-4 py-2 text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-lg transition-colors duration-200"
+              >Services</a
+            >
+            <a
+              href="#fleet"
+              class="block px-4 py-2 text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-lg transition-colors duration-200"
+              >Fleet</a
+            >
+            <a
+              href="#about"
+              class="block px-4 py-2 text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-lg transition-colors duration-200"
+              >About</a
+            >
+            <a
+              href="#contact"
+              class="block px-4 py-2 text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-lg transition-colors duration-200"
+              >Contact</a
+            >
+            <a
+              href="#contact"
+              class="block mx-4 mt-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl text-center"
+              >Book Now</a
+            >
           </div>
         </div>
       </div>
-      <div class="footer-bottom">
-        <p>&copy; 2025 Ladakh Taxi. All rights reserved.</p>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="relative min-h-screen flex items-center justify-center overflow-hidden"
+    >
+      <!-- Background with overlay -->
+      <div
+        class="absolute inset-0 bg-gradient-to-br from-blue-900/80 via-blue-800/70 to-slate-900/80"
+      ></div>
+      <div class="absolute inset-0 bg-black/40"></div>
+
+      <!-- Background image -->
+      <div
+        class="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style="background-image: url('assets/images/taxi1.jpg')"
+      ></div>
+
+      <!-- Content -->
+      <div
+        class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white"
+      >
+        <div class="max-w-4xl mx-auto">
+          <h1
+            class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight"
+            style="font-family: 'Poppins', sans-serif"
+          >
+            Experience the Magic of
+            <span class="text-blue-200">Ladakh</span>
+          </h1>
+          <p
+            class="text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto leading-relaxed"
+          >
+            Professional taxi services and custom tours in the Land of High
+            Passes. Discover breathtaking landscapes with our experienced
+            drivers.
+          </p>
+          <div
+            class="flex flex-col sm:flex-row gap-4 justify-center items-center"
+          >
+            <a
+              href="#contact"
+              class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl text-lg"
+            >
+              <i class="fas fa-calendar-check mr-2"></i>
+              Book Your Journey
+            </a>
+            <a
+              href="#services"
+              class="bg-white hover:bg-gray-50 text-blue-600 font-semibold py-4 px-8 rounded-lg border-2 border-blue-600 transition-all duration-300 transform hover:scale-105 text-lg"
+            >
+              <i class="fas fa-info-circle mr-2"></i>
+              Learn More
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div
+        class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce"
+      >
+        <div
+          class="w-6 h-10 border-2 border-white rounded-full flex justify-center"
+        >
+          <div class="w-1 h-3 bg-white rounded-full mt-2 animate-pulse"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 md:py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2
+            class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4"
+            style="font-family: 'Poppins', sans-serif"
+          >
+            Our Premium Services
+          </h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            From airport transfers to custom photography tours, we provide
+            comprehensive transportation solutions across Ladakh.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div
+            class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 p-8 text-center group"
+          >
+            <div
+              class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-blue-200 transition-colors duration-300"
+            >
+              <i class="fas fa-plane text-blue-600 text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-4">
+              Airport Transfer
+            </h3>
+            <p class="text-gray-600 leading-relaxed">
+              Reliable pickup and drop-off services from Leh Airport with
+              professional drivers and comfortable vehicles.
+            </p>
+          </div>
+
+          <div
+            class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 p-8 text-center group"
+          >
+            <div
+              class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-blue-200 transition-colors duration-300"
+            >
+              <i class="fas fa-mountain text-blue-600 text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-4">
+              Custom Tours
+            </h3>
+            <p class="text-gray-600 leading-relaxed">
+              Tailored itineraries to explore Ladakh's hidden gems and
+              off-the-beaten-path destinations.
+            </p>
+          </div>
+
+          <div
+            class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 p-8 text-center group"
+          >
+            <div
+              class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-blue-200 transition-colors duration-300"
+            >
+              <i class="fas fa-hotel text-blue-600 text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-4">
+              Hotel Transfer
+            </h3>
+            <p class="text-gray-600 leading-relaxed">
+              Comfortable transportation to and from your accommodation with
+              door-to-door service.
+            </p>
+          </div>
+
+          <div
+            class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 p-8 text-center group"
+          >
+            <div
+              class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-blue-200 transition-colors duration-300"
+            >
+              <i class="fas fa-camera text-blue-600 text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-4">
+              Photography Tours
+            </h3>
+            <p class="text-gray-600 leading-relaxed">
+              Specialized tours for capturing Ladakh's stunning landscapes and
+              cultural moments.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fleet Section -->
+    <section id="fleet" class="py-16 md:py-24 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2
+            class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4"
+            style="font-family: 'Poppins', sans-serif"
+          >
+            Our Premium Fleet
+          </h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            Experience comfort and reliability with our well-maintained vehicles
+            and professional drivers.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div
+            class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden group"
+          >
+            <div class="relative overflow-hidden">
+              <img
+                src="assets/images/taxi11.jpg"
+                alt="Luxury Taxi Service"
+                class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"
+              ></div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">
+                Luxury Taxi Service
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Comfortable and spacious vehicles equipped with modern amenities
+                for your journey.
+              </p>
+              <div class="flex items-center text-blue-600">
+                <i class="fas fa-star mr-1"></i>
+                <span class="text-sm font-medium">Premium Comfort</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden group"
+          >
+            <div class="relative overflow-hidden">
+              <img
+                src="assets/images/taxi8.jpg"
+                alt="Professional Drivers"
+                class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"
+              ></div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">
+                Professional Drivers
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Experienced drivers who know Ladakh's terrain well and ensure
+                safe travel.
+              </p>
+              <div class="flex items-center text-blue-600">
+                <i class="fas fa-shield-alt mr-1"></i>
+                <span class="text-sm font-medium">Safe & Experienced</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden group"
+          >
+            <div class="relative overflow-hidden">
+              <img
+                src="assets/images/taxi5.jpg"
+                alt="Scenic Tours"
+                class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"
+              ></div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">
+                Scenic Tours
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Explore Ladakh's most beautiful destinations with our guided
+                tour services.
+              </p>
+              <div class="flex items-center text-blue-600">
+                <i class="fas fa-map-marked-alt mr-1"></i>
+                <span class="text-sm font-medium">Guided Tours</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 md:py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div class="space-y-6">
+            <h2
+              class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900"
+              style="font-family: 'Poppins', sans-serif"
+            >
+              Your Trusted Partner in Ladakh
+            </h2>
+            <p class="text-lg text-gray-600 leading-relaxed">
+              With years of experience in Ladakh's challenging terrain, we
+              provide safe, comfortable, and reliable transportation services.
+              Our experienced drivers are well-versed with local routes and
+              ensure a memorable journey through the Land of High Passes.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div class="flex items-center space-x-3">
+                <div
+                  class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center"
+                >
+                  <i class="fas fa-check text-blue-600 text-sm"></i>
+                </div>
+                <span class="text-gray-700 font-medium"
+                  >Experienced Drivers</span
+                >
+              </div>
+              <div class="flex items-center space-x-3">
+                <div
+                  class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center"
+                >
+                  <i class="fas fa-check text-blue-600 text-sm"></i>
+                </div>
+                <span class="text-gray-700 font-medium"
+                  >Well-Maintained Vehicles</span
+                >
+              </div>
+              <div class="flex items-center space-x-3">
+                <div
+                  class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center"
+                >
+                  <i class="fas fa-check text-blue-600 text-sm"></i>
+                </div>
+                <span class="text-gray-700 font-medium">24/7 Support</span>
+              </div>
+              <div class="flex items-center space-x-3">
+                <div
+                  class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center"
+                >
+                  <i class="fas fa-check text-blue-600 text-sm"></i>
+                </div>
+                <span class="text-gray-700 font-medium"
+                  >Customizable Tours</span
+                >
+              </div>
+            </div>
+
+            <div class="pt-4">
+              <a
+                href="#contact"
+                class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+              >
+                <i class="fas fa-phone mr-2"></i>
+                Get in Touch
+              </a>
+            </div>
+          </div>
+
+          <div class="relative">
+            <div class="grid grid-cols-2 gap-4">
+              <img
+                src="assets/images/taxi3.jpg"
+                alt="Ladakh Taxi Service"
+                class="rounded-lg shadow-lg"
+              />
+              <img
+                src="assets/images/taxi7.jpg"
+                alt="Professional Service"
+                class="rounded-lg shadow-lg mt-8"
+              />
+              <img
+                src="assets/images/taxi2.jpg"
+                alt="Scenic Views"
+                class="rounded-lg shadow-lg"
+              />
+              <img
+                src="assets/images/taxi4.jpg"
+                alt="Ladakh Experience"
+                class="rounded-lg shadow-lg mt-8"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-24 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2
+            class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4"
+            style="font-family: 'Poppins', sans-serif"
+          >
+            Get in Touch
+          </h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            Ready to explore Ladakh? Contact us for bookings, inquiries, or
+            custom tour arrangements.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <!-- Contact Information -->
+          <div class="space-y-8">
+            <div
+              class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 p-8"
+            >
+              <h3 class="text-2xl font-semibold text-gray-900 mb-6">
+                Contact Information
+              </h3>
+
+              <div class="space-y-6">
+                <div class="flex items-center space-x-4">
+                  <div
+                    class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center"
+                  >
+                    <i class="fas fa-phone text-blue-600"></i>
+                  </div>
+                  <div>
+                    <p class="text-sm text-gray-500">Phone Number</p>
+                    <p class="text-lg font-semibold text-gray-900">
+                      +91 80823 40177
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-center space-x-4">
+                  <div
+                    class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center"
+                  >
+                    <i class="fas fa-envelope text-blue-600"></i>
+                  </div>
+                  <div>
+                    <p class="text-sm text-gray-500">Email Address</p>
+                    <p class="text-lg font-semibold text-gray-900">
+                      taxiinleh@gmail.com
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-center space-x-4">
+                  <div
+                    class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center"
+                  >
+                    <i class="fas fa-map-marker-alt text-blue-600"></i>
+                  </div>
+                  <div>
+                    <p class="text-sm text-gray-500">Location</p>
+                    <p class="text-lg font-semibold text-gray-900">
+                      Leh, Ladakh, India
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-8 pt-6 border-t border-gray-200">
+                <h4 class="text-lg font-semibold text-gray-900 mb-4">
+                  Follow Us
+                </h4>
+                <div class="flex space-x-4">
+                  <a
+                    href="#"
+                    class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center text-white hover:bg-blue-700 transition-colors duration-200"
+                  >
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center text-white hover:bg-blue-700 transition-colors duration-200"
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a
+                    href="https://wa.me/8082340177"
+                    class="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center text-white hover:bg-green-700 transition-colors duration-200"
+                  >
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div
+            class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 p-8"
+          >
+            <h3 class="text-2xl font-semibold text-gray-900 mb-6">
+              Send us a Message
+            </h3>
+
+            <form
+              class="space-y-6"
+              action="https://formsubmit.co/Jullayindia@gmail.com"
+              method="POST"
+            >
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <label
+                    for="name"
+                    class="block text-sm font-medium text-gray-700 mb-2"
+                    >Full Name</label
+                  >
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors duration-200"
+                  />
+                </div>
+                <div>
+                  <label
+                    for="email"
+                    class="block text-sm font-medium text-gray-700 mb-2"
+                    >Email Address</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors duration-200"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label
+                  for="phone"
+                  class="block text-sm font-medium text-gray-700 mb-2"
+                  >Phone Number</label
+                >
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors duration-200"
+                />
+              </div>
+
+              <div>
+                <label
+                  for="message"
+                  class="block text-sm font-medium text-gray-700 mb-2"
+                  >Message</label
+                >
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors duration-200 resize-none"
+                ></textarea>
+              </div>
+
+              <input
+                type="hidden"
+                name="_subject"
+                value="New Contact Form Submission"
+              />
+              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="_next" value="thank-you-simple.html" />
+              <input type="hidden" name="_captcha" value="false" />
+
+              <button
+                type="submit"
+                class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl text-lg"
+              >
+                <i class="fas fa-paper-plane mr-2"></i>
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div>
+            <div class="flex items-center space-x-2 mb-4">
+              <div
+                class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center"
+              >
+                <i class="fas fa-car text-white"></i>
+              </div>
+              <span
+                class="text-xl font-bold"
+                style="font-family: 'Poppins', sans-serif"
+                >Ladakh Taxi</span
+              >
+            </div>
+            <p class="text-gray-400 leading-relaxed">
+              Your trusted partner for exploring the breathtaking landscapes and
+              cultural wonders of Ladakh.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#home"
+                  class="text-gray-400 hover:text-white transition-colors duration-200"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#services"
+                  class="text-gray-400 hover:text-white transition-colors duration-200"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#fleet"
+                  class="text-gray-400 hover:text-white transition-colors duration-200"
+                  >Fleet</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  class="text-gray-400 hover:text-white transition-colors duration-200"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="text-gray-400 hover:text-white transition-colors duration-200"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Connect With Us</h3>
+            <div class="flex space-x-4 mb-4">
+              <a
+                href="#"
+                class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-white hover:bg-blue-600 transition-colors duration-200"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-white hover:bg-blue-600 transition-colors duration-200"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                href="https://wa.me/8082340177"
+                class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-white hover:bg-green-600 transition-colors duration-200"
+              >
+                <i class="fab fa-whatsapp"></i>
+              </a>
+            </div>
+            <p class="text-gray-400 text-sm">
+              Available 24/7 for your travel needs
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+          <div class="flex flex-col md:flex-row justify-between items-center">
+            <p class="text-gray-400 text-sm">
+              &copy; 2025 Ladakh Taxi. All rights reserved.
+            </p>
+            <p class="text-gray-400 text-sm mt-2 md:mt-0">
+              Made with ❤️ for Ladakh
+            </p>
+          </div>
+        </div>
       </div>
     </footer>
 
     <!-- Floating Contact Icons -->
-    <div class="floating-icons">
+    <div class="fixed bottom-6 right-6 z-40 space-y-4">
       <a
         href="https://wa.me/+918082340177"
-        class="float-icon whatsapp"
+        class="block w-14 h-14 bg-green-600 rounded-full flex items-center justify-center text-white shadow-lg hover:shadow-xl transform hover:scale-110 transition-all duration-300 group"
         target="_blank"
       >
-        <i class="fab fa-whatsapp"></i>
-        <span class="tooltip">Chat with us</span>
+        <i class="fab fa-whatsapp text-xl"></i>
+        <span
+          class="absolute right-16 bg-gray-900 text-white text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap"
+        >
+          Chat with us
+        </span>
       </a>
-      <a href="tel:+918082340177" class="float-icon call">
-        <i class="fas fa-phone"></i>
-        <span class="tooltip">Call us</span>
+
+      <a
+        href="tel:+918082340177"
+        class="block w-14 h-14 bg-blue-600 rounded-full flex items-center justify-center text-white shadow-lg hover:shadow-xl transform hover:scale-110 transition-all duration-300 group"
+      >
+        <i class="fas fa-phone text-xl"></i>
+        <span
+          class="absolute right-16 bg-gray-900 text-white text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap"
+        >
+          Call us
+        </span>
       </a>
     </div>
 
-    <script src="script.js"></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>

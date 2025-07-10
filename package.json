@@ -1,0 +1,21 @@
+{
+  "name": "taxiinladakh",
+  "version": "1.0.0",
+  "description": "A beautiful, responsive website for taxi services and custom tours in Leh Ladakh. This website showcases various services, popular destinations, and provides an easy way for customers to contact the service provider.",
+  "main": "script.js",
+  "scripts": {
+    "dev": "tailwindcss -i src/input.css -o assets/css/output.css --watch",
+    "build": "tailwindcss -i src/input.css -o assets/css/output.css --minify",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.10",
+    "@tailwindcss/typography": "^0.5.16",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.11"
+  }
+}
