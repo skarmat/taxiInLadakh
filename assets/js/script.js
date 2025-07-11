@@ -5,7 +5,6 @@ const navbar = document.getElementById("navbar");
 const mobileMenuBtn = document.getElementById("mobile-menu-btn");
 const mobileMenu = document.getElementById("mobile-menu");
 const navLinks = document.querySelectorAll('a[href^="#"]');
-const sections = document.querySelectorAll("section[id]");
 
 // Mobile Navigation Toggle
 mobileMenuBtn?.addEventListener("click", () => {
@@ -76,29 +75,7 @@ window.addEventListener("scroll", () => {
   lastScroll = currentScroll;
 });
 
-// Scroll-to-section highlight in navbar
-function highlightNav() {
-  let scrollPos = window.scrollY + 100;
-  sections.forEach((section) => {
-    const id = section.getAttribute("id");
-    const navLink = document.querySelector(`nav a[href="#${id}"]`);
-    if (!navLink) return;
-    if (
-      section.offsetTop <= scrollPos &&
-      section.offsetTop + section.offsetHeight > scrollPos
-    ) {
-      navLink.classList.add("text-blue-600", "font-semibold");
-      navLink.classList.remove("text-gray-700");
-    } else {
-      navLink.classList.remove("text-blue-600", "font-semibold");
-      navLink.classList.add("text-gray-700");
-    }
-  });
-}
-window.addEventListener("scroll", highlightNav);
-document.addEventListener("DOMContentLoaded", highlightNav);
-
-// Intersection Observer for Animations (fade-in, slide-up, staggered)
+// Intersection Observer for Animations
 const observerOptions = {
   threshold: 0.1,
   rootMargin: "0px 0px -50px 0px",
@@ -107,30 +84,22 @@ const observerOptions = {
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      entry.target.classList.add("animate-fade-in", "animate-slide-up");
-      entry.target.style.opacity = 1;
-      entry.target.style.transform = "translateY(0)";
+      entry.target.classList.add("animate-fade-in");
       observer.unobserve(entry.target);
     }
   });
 }, observerOptions);
 
-// Staggered animation for cards/sections
-function animateStaggered(selector) {
-  const elements = document.querySelectorAll(selector);
-  elements.forEach((el, i) => {
-    el.style.opacity = 0;
-    el.style.transform = "translateY(30px)";
-    setTimeout(() => {
-      observer.observe(el);
-    }, i * 120);
-  });
-}
-
+// Observe elements for animation
 document.addEventListener("DOMContentLoaded", () => {
-  animateStaggered(
-    ".card, .service-card, .destination-card, .about-content, .contact-info, .contact-form"
+  const animatedElements = document.querySelectorAll(
+    ".card, .service-card, .destination-card"
   );
+  animatedElements.forEach((el) => {
+    el.style.opacity = "0";
+    el.style.transform = "translateY(20px)";
+    observer.observe(el);
+  });
 });
 
 // Form Submission with Enhanced UX
@@ -252,7 +221,7 @@ window.addEventListener("scroll", debouncedScrollHandler);
 
 // Console welcome message
 console.log(
-  "%c\ud83d\ude97 Welcome to Ladakh Taxi Services!",
+  "%c🚗 Welcome to Ladakh Taxi Services!",
   "color: #3b82f6; font-size: 20px; font-weight: bold;"
 );
 console.log(
